@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 /// Centralized app color constants and theme configuration.
 class AppColors {
-  static const Color primary = Color(0xFF009688);
-  static const Color primaryDark = Color(0xFF00796B);
+  static const Color primary = Color(0xFF006E5C);
+  static const Color primaryDark = Color(0xFF005A4B);
   static const Color secondary = Color(0xFF4DB6AC);
   static const Color background = Color(0xFFF8FAFC);
   static const Color surface = Colors.white;

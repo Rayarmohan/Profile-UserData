@@ -18,6 +18,18 @@ Users can sign up, fill in personal details, view their profile on the home scre
 
 ---
 
+## Screenshots
+
+| Login | Sign Up | Complete Profile |
+|:-----:|:-------:|:----------------:|
+| ![Login](assets/login.png) | ![Sign Up](assets/sign_up.png) | ![Complete Profile](assets/complete_profile.png) |
+
+| Home | Edit Profile |
+|:----:|:------------:|
+| ![Home](assets/home.png) | ![Edit Profile](assets/edit_profile.png) |
+
+---
+
 ## Architecture
 
 This project follows **Clean Architecture** with a **feature-based folder structure** and **BLoC** (Business Logic Component) as the state management pattern.
@@ -100,7 +112,7 @@ lib/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/profile_data_app.git
+git clone https://github.com/Rayarmohan/Profile-UserData.git
 cd profile_data_app
 ```
 

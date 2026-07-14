@@ -6,7 +6,6 @@ import '../../bloc/auth_bloc.dart';
 import '../../bloc/auth_event.dart';
 import '../../bloc/auth_state.dart';
 import '../../../../core/router/app_router.dart';
-import '../widgets/auth_header.dart';
 
 /// Sign-up screen with email, password, and confirm password only.
 /// On success, navigates to the profile details screen.
@@ -66,11 +65,24 @@ class _SignupScreenState extends State<SignupScreen> {
               child: Form(
                 key: _formKey,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const AuthHeader(
-                      title: 'Create Account',
-                      subtitle: 'Sign up to get started',
+                    const SizedBox(height: 60),
+                    const Text(
+                      'Create Account',
+                      style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    const Text(
+                      'All users are verified to help prevent fake accounts.',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: AppColors.textSecondary,
+                      ),
                     ),
                     const SizedBox(height: 40),
                     // Email field
