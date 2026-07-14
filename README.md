@@ -20,13 +20,28 @@ Users can sign up, fill in personal details, view their profile on the home scre
 
 ## Screenshots
 
-| Login | Sign Up | Complete Profile |
-|:-----:|:-------:|:----------------:|
-| ![Login](assets/login.png) | ![Sign Up](assets/sign_up.png) | ![Complete Profile](assets/complete_profile.png) |
-
-| Home | Edit Profile |
-|:----:|:------------:|
-| ![Home](assets/home.png) | ![Edit Profile](assets/edit_profile.png) |
+<table>
+  <tr>
+    <td align="center"><strong>Login</strong></td>
+    <td align="center"><strong>Sign Up</strong></td>
+    <td align="center"><strong>Complete Profile</strong></td>
+  </tr>
+  <tr>
+    <td><img src="assets/login.png" width="250" /></td>
+    <td><img src="assets/sign_up.png" width="250" /></td>
+    <td><img src="assets/complete_profile.png" width="250" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Home</strong></td>
+    <td align="center"><strong>Edit Profile</strong></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="assets/home.png" width="250" /></td>
+    <td><img src="assets/edit_profile.png" width="250" /></td>
+    <td></td>
+  </tr>
+</table>
 
 ---
 
