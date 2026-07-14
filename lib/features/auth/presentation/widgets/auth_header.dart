@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
 
@@ -34,9 +35,8 @@ class AuthHeader extends StatelessWidget {
         const SizedBox(height: 24),
         Text(
           title,
-          style: const TextStyle(
+          style: GoogleFonts.dmSerifDisplay(
             fontSize: 28,
-            fontWeight: FontWeight.bold,
             color: AppColors.textPrimary,
           ),
         ),

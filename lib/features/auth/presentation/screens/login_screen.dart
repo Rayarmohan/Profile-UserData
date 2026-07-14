@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../bloc/auth_bloc.dart';
@@ -79,31 +80,28 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     const SizedBox(height: 60),
                     // Welcome header
-                    const Text(
+                    Text(
                       'Welcome',
-                      style: TextStyle(
+                      style: GoogleFonts.dmSerifDisplay(
                         fontSize: 32,
-                        fontWeight: FontWeight.bold,
                         color: AppColors.textPrimary,
                       ),
                     ),
                     const SizedBox(height: 4),
                     RichText(
-                      text: const TextSpan(
+                      text: TextSpan(
                         children: [
                           TextSpan(
                             text: 'to ',
-                            style: TextStyle(
+                            style: GoogleFonts.dmSerifDisplay(
                               fontSize: 32,
-                              fontWeight: FontWeight.bold,
                               color: AppColors.textPrimary,
                             ),
                           ),
                           TextSpan(
                             text: 'Profile App',
-                            style: TextStyle(
+                            style: GoogleFonts.dmSerifDisplay(
                               fontSize: 32,
-                              fontWeight: FontWeight.bold,
                               color: AppColors.primary,
                             ),
                           ),

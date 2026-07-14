@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../../bloc/auth_bloc.dart';
@@ -68,11 +69,10 @@ class _SignupScreenState extends State<SignupScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(height: 60),
-                    const Text(
+                    Text(
                       'Create Account',
-                      style: TextStyle(
+                      style: GoogleFonts.dmSerifDisplay(
                         fontSize: 32,
-                        fontWeight: FontWeight.bold,
                         color: AppColors.textPrimary,
                       ),
                     ),
