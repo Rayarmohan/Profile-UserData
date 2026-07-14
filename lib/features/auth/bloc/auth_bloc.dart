@@ -63,7 +63,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         password: event.password,
       );
       emit(AuthAuthenticated(user: userModel));
-    } on Exception catch (e) {
+    } on Object catch (e) {
       emit(AuthError(message: _mapAuthError(e)));
     }
   }
@@ -81,7 +81,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         password: event.password,
       );
       emit(AuthSignUpSuccess(uid: user.uid, email: user.email ?? ''));
-    } on Exception catch (e) {
+    } on Object catch (e) {
       emit(AuthError(message: _mapAuthError(e)));
     }
   }
@@ -97,19 +97,19 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
   }
 
   /// Maps Firebase auth exceptions to user-friendly messages.
-  String _mapAuthError(Exception e) {
+  String _mapAuthError(Object e) {
     final msg = e.toString();
     if (msg.contains('user-not-found')) {
-      return 'No user found with this email.';
-    } else if (msg.contains('wrong-password')) {
-      return 'Incorrect password. Please try again.';
+      return 'No account found with this email. Please sign up first.';
+    } else if (msg.contains('wrong-password') || msg.contains('invalid-credential')) {
+      return 'Invalid email or password. Please check and try again.';
     } else if (msg.contains('email-already-in-use')) {
-      return 'User already exists. Please go to login.';
+      return 'An account already exists with this email. Please go to login.';
     } else if (msg.contains('weak-password')) {
       return 'Password is too weak. Use at least 6 characters.';
     } else if (msg.contains('invalid-email')) {
       return 'Please enter a valid email address.';
     }
-    return 'An unexpected error occurred. Please try again.';
+    return 'Something went wrong. Please try again.';
   }
 }
